@@ -1,0 +1,65 @@
+item: {
+ id: 1
+ name: 'Complete'
+ display_name: 'Complete'
+ keypoints {
+   id: 0
+   label: "kp0"
+ }
+ keypoints {
+   id: 1
+   label: "kp1"
+ }
+ keypoints {
+   id: 2
+   label: "kp2"
+ }
+ keypoints {
+   id: 3
+   label: "kp3"
+ }
+ keypoints {
+   id: 4
+   label: "kp4"
+ }
+ keypoints {
+   id: 5
+   label: "kp5"
+ }
+  keypoints {
+   id: 6
+   label: "kp6"
+ }
+  keypoints {
+   id: 7
+   label: "kp7"
+ }
+  keypoints {
+   id: 8
+   label: "kp8"
+ }
+  keypoints {
+   id: 9
+   label: "kp9"
+ }
+  keypoints {
+   id: 10
+   label: "kp10"
+ }
+  keypoints {
+   id: 11
+   label: "kp11"
+ }
+}
+
+item: {
+ id: 2
+ name: 'Incomplete'
+ display_name: 'Incomplete'
+}
+
+item: {
+ id: 3
+ name: 'Implant'
+ display_name: 'Implant'
+}
