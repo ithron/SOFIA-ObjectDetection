@@ -63,6 +63,7 @@ RUN mkdir -p /home/devel/checkpoint && \
 COPY train.sh /home/devel/
 COPY eval.sh /home/devel/
 COPY tb.sh /home/devel/
+COPY export.sh /home/devel/
 
 # Copy pipeline configuration and label map
 COPY model/pipeline.config /home/devel/

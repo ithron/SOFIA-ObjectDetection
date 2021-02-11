@@ -40,6 +40,13 @@ To monitor the training performance run
 ```
 and go to [http://localhost:8080](http://localhost:8080).
 
+## Export the Trained Model
+
+```shell
+./export-docker.sh
+```
+
+After that, the directory `${SOFIA_MODEL_DIR}/exported/SOFIA-ObjectDetection` contains the exported model.
 
 ## Build Docker Image
 
