@@ -5,7 +5,6 @@ set -uo pipefail
 SOFIA_DOCKER_IMAGE="${SOFIA_DOCKER_IMAGE:=sreinhold/sofia-object-detection}"
 SOFIA_NAME="${SOFIA_NAME:=}"
 
-SOFIA_DATA_DIR="${SOFIA_DATA_DIR:=$(pwd)/data}"
 SOFIA_MODEL_DIR="${SOFIA_MODEL_DIR:=$(pwd)/data}"
 
 DOCKER_EXE=`which docker`
@@ -20,7 +19,6 @@ fi
 
 ${DOCKER_EXE} run \
   ${COMMON_DOCKER_ARGS} \
-  -v ${DATA_DIR}:/data \
   -v ${MODEL_DIR}:/model \
   -it \
   --rm \
