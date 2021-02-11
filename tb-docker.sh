@@ -2,7 +2,7 @@
 
 set -uo pipefail
 
-SOFIA_DOCKER_IMAGE="${SOFIA_DOCKER_IMAGE:=sofia-object-detection}"
+SOFIA_DOCKER_IMAGE="${SOFIA_DOCKER_IMAGE:=sreinhold/sofia-object-detection}"
 SOFIA_NAME="${SOFIA_NAME:=}"
 SOFIA_TB_PORT="${SOFIA_TB_PORT:=8080}"
 SOFIA_MODEL_DIR="${SOFIA_MODEL_DIR:=$(pwd)/data}"

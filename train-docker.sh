@@ -2,7 +2,7 @@
 
 set -uo pipefail
 
-SOFIA_DOCKER_IMAGE="${SOFIA_DOCKER_IMAGE:=sofia-object-detection}"
+SOFIA_DOCKER_IMAGE="${SOFIA_DOCKER_IMAGE:=sreinhold/sofia-object-detection}"
 SOFIA_GPUS="${SOFIA_GPUS:=all}"
 SOFIA_NAME="${SOFIA_NAME:=}"
 
