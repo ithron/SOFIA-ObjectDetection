@@ -11,8 +11,6 @@ SOFIA_MODEL_DIR="${SOFIA_MODEL_DIR:=$(pwd)/data}"
 
 DOCKER_EXE=`which docker`
 COMMON_DOCKER_ARGS="--user `id -u`:`id -g`"
-MODEL_DIR=`pwd`/model
-DATA_DIR=`pwd`/data
 
 if [[ -n "${SOFIA_NAME}" ]]
 then
@@ -22,8 +20,8 @@ fi
 ${DOCKER_EXE} run \
   ${COMMON_DOCKER_ARGS} \
   --gpus=${SOFIA_GPUS} \
-  -v ${DATA_DIR}:/data \
-  -v ${MODEL_DIR}:/model \
+  -v ${SOFIA_DATA_DIR}:/data \
+  -v ${SOFIA_MODEL_DIR}:/model \
   -it \
   --rm \
   ${SOFIA_DOCKER_IMAGE} \

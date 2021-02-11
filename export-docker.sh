@@ -9,8 +9,6 @@ SOFIA_MODEL_DIR="${SOFIA_MODEL_DIR:=$(pwd)/data}"
 
 DOCKER_EXE=`which docker`
 COMMON_DOCKER_ARGS="--user `id -u`:`id -g`"
-MODEL_DIR=`pwd`/model
-DATA_DIR=`pwd`/data
 
 if [[ -n "${SOFIA_NAME}" ]]
 then
@@ -19,7 +17,7 @@ fi
 
 ${DOCKER_EXE} run \
   ${COMMON_DOCKER_ARGS} \
-  -v ${MODEL_DIR}:/model \
+  -v ${SOFIA_MODEL_DIR}:/model \
   -it \
   --rm \
   ${SOFIA_DOCKER_IMAGE} \
