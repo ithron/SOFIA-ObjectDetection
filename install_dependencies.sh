@@ -3,8 +3,6 @@
 set -eu
 set -o pipefail
 
-git submodule update --init
-
 cd models/research
 # Compile protos.
 protoc object_detection/protos/*.proto --python_out=.

@@ -1,3 +1,2 @@
 tf-nightly-gpu
 tfds-nightly
-tensorboard
