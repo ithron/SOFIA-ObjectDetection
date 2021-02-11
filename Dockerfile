@@ -64,7 +64,8 @@ COPY train.sh /home/devel/
 COPY eval.sh /home/devel/
 COPY tb.sh /home/devel/
 
-# Copy piipeline configuration
+# Copy pipeline configuration and label map
 COPY model/pipeline.config /home/devel/
+COPY model/label-map.pbtxt /home/devel/
 
 CMD ["/bin/bash"]
